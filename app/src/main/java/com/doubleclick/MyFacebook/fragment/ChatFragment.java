@@ -7,6 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,11 +53,18 @@ public class ChatFragment extends Fragment {
         FirebaseDatabase.getInstance().getReference("Ads").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if (Objects.requireNonNull(snapshot.child("type").getValue()).toString().equals("on")){
-                    mAdView.setVisibility(View.VISIBLE);
-                }else {
-                    mAdView.setVisibility(View.GONE);
+                try {
+                    if (snapshot.exists()) {
+                        if (Objects.requireNonNull(snapshot.child("type").getValue()).toString().equals("on")) {
+                            mAdView.setVisibility(View.VISIBLE);
+                        } else {
+                            mAdView.setVisibility(View.GONE);
+                        }
+                    }
+                } catch (Exception e) {
+                    Log.e("ChatFragmentException", e.getMessage());
                 }
+
             }
 
             @Override
@@ -76,15 +84,15 @@ public class ChatFragment extends Fragment {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 chatlistList.clear();
-                for (DataSnapshot ds: snapshot.getChildren()){
+                for (DataSnapshot ds : snapshot.getChildren()) {
                     ModelChatList chatlist = ds.getValue(ModelChatList.class);
                     chatlistList.add(chatlist);
                 }
-                if (!snapshot.exists()){
+                if (!snapshot.exists()) {
                     view.findViewById(R.id.progressBar).setVisibility(View.GONE);
                     recyclerView.setVisibility(View.GONE);
                     view.findViewById(R.id.found).setVisibility(View.VISIBLE);
-                }else {
+                } else {
                     view.findViewById(R.id.progressBar).setVisibility(View.GONE);
                     recyclerView.setVisibility(View.VISIBLE);
                     view.findViewById(R.id.found).setVisibility(View.GONE);
@@ -107,10 +115,10 @@ public class ChatFragment extends Fragment {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 userList.clear();
-                for (DataSnapshot ds: snapshot.getChildren()){
+                for (DataSnapshot ds : snapshot.getChildren()) {
                     ModelUser user = ds.getValue(ModelUser.class);
-                    for (ModelChatList chatlist: chatlistList){
-                        if (Objects.requireNonNull(user).getId() != null && user.getId().equals(chatlist.getId())){
+                    for (ModelChatList chatlist : chatlistList) {
+                        if (Objects.requireNonNull(user).getId() != null && user.getId().equals(chatlist.getId())) {
                             userList.add(user);
                             break;
                         }

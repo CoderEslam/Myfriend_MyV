@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Myfriend</string>
+    <string name="app_name">MyFacebook</string>
 
     <!-- Privacy -->
     <string-array name="privacy">
@@ -11,7 +11,7 @@
     <!-- PLEASE KEEP THIS App ID IN SAFE PLACE -->
     <!-- Get your own App ID at https://dashboard.agora.io/ -->
     <!-- After you entered the App ID, remove <##> outside of Your App ID -->
-    <string name="agora_app_id" translatable="false">3ff1177808494805ad3e9a3bfd539e0e</string>
+    <string name="agora_app_id" translatable="false">e8e3cb6efcef4a19bfa1641d4a712e10</string>
 
     <!-- Obtain a temp Access Token at https://dashboard.agora.io -->
     <!-- You will need to deploy your own token server for production release -->

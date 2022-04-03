@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "447563348245",
-    "project_id": "myfriendw-26e86",
-    "storage_bucket": "myfriendw-26e86.appspot.com"
+    "project_number": "284754207599",
+    "project_id": "myfacebook-e37fd",
+    "storage_bucket": "myfacebook-e37fd.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:447563348245:android:1b293129677c71f47d911c",
+        "mobilesdk_app_id": "1:284754207599:android:7ae26819174dd690133e9a",
         "android_client_info": {
-          "package_name": "com.spacester.myfriend"
+          "package_name": "com.doubleclick.myfacebook"
         }
       },
       "oauth_client": [
         {
-          "client_id": "447563348245-asuqgfu4p4hise89elhjeh4e7rjhus0l.apps.googleusercontent.com",
+          "client_id": "284754207599-1kabfm3b57hthm9k08vpodtg3aa86n3v.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAJbOn7apgfPBJ_tNwpJW-g1wkIs3zkN9U"
+          "current_key": "AIzaSyCOhu3wUOiwnK_ye4a94IlV7pZqTyAzvrQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "447563348245-asuqgfu4p4hise89elhjeh4e7rjhus0l.apps.googleusercontent.com",
+              "client_id": "284754207599-1kabfm3b57hthm9k08vpodtg3aa86n3v.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

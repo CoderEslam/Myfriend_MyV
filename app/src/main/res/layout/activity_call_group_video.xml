@@ -9,7 +9,7 @@
     tools:context=".groupVideoCall.openvcall.ui.VideoGroupCallActivity"
     tools:ignore="Overdraw">
 
-    <com.spacester.myfriend.groupVideoCall.openvcall.ui.layout.GridVideoViewContainer
+    <com.doubleclick.MyFacebook.groupVideoCall.openvcall.ui.layout.GridVideoViewContainer
         android:id="@+id/grid_video_view_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

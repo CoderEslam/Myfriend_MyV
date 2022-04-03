@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.spacester.myfriend">
+    package="com.doubleclick.MyFacebook">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission
@@ -18,7 +18,7 @@
     <uses-permission android:name="android.permission.BLUETOOTH" />
 
     <application
-        android:name=".groupVideoCall.openvcall.AGApplicationVideo"
+        android:name="com.doubleclick.MyFacebook.groupVideoCall.openvcall.AGApplicationVideo"
         android:allowBackup="true"
         android:extractNativeLibs="false"
         android:icon="@mipmap/ic_launcher"
@@ -29,149 +29,149 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup"
         tools:replace="android:theme">
-        <activity android:name=".group.JoinRequestActivity" />
-        <activity android:name=".StickersPost" />
-        <activity android:name=".SendStickerActivity" />
-        <activity android:name=".Stickers" />
-        <activity android:name=".admin.WarnGroupActivity" />
-        <activity android:name=".admin.WarnUserActivity" />
-        <activity android:name=".admin.VerificationRequestActivity" />
-        <activity android:name=".admin.ReportedPostActivity" />
-        <activity android:name=".admin.ReportedReelsActivity" />
-        <activity android:name=".admin.ReportedGroupsActivity" />
-        <activity android:name=".admin.ReportedUserActivity" />
-        <activity android:name=".admin.AdminActivity" />
-        <activity android:name=".menu.PrivacyActivity" />
-        <activity android:name=".group.AddGroupActivity" />
-        <activity android:name=".group.GroupMembersActivity" />
-        <activity android:name=".menu.EditNumberActivity" />
-        <activity android:name=".menu.EditEmailActivity" />
-        <activity android:name=".menu.EditPasswordActivity" />
-        <activity android:name=".menu.VerificationActivity" />
-        <activity android:name=".menu.SavedActivity" />
-        <activity android:name=".menu.MenuActivity" />
-        <activity android:name=".who.FollowersActivity" />
-        <activity android:name=".who.FollowingActivity" />
-        <activity android:name=".notifications.NotificationScreen" />
-        <activity android:name=".who.ReelLikedActivity" />
-        <activity android:name=".who.ViewedActivity" />
-        <activity android:name=".story.ChatStoryViewActivity" />
-        <activity android:name=".story.HighViewActivity" />
-        <activity android:name=".search.LocationActivity" />
-        <activity android:name=".who.LikedActivity" />
-        <activity android:name=".story.StoryViewActivity" />
-        <activity android:name=".story.AddStoryActivity" />
-        <activity android:name=".podcast.StartPodcastActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.group.JoinRequestActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.StickersPost" />
+        <activity android:name="com.doubleclick.MyFacebook.SendStickerActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.Stickers" />
+        <activity android:name="com.doubleclick.MyFacebook.admin.WarnGroupActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.admin.WarnUserActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.admin.VerificationRequestActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.admin.ReportedPostActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.admin.ReportedReelsActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.admin.ReportedGroupsActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.admin.ReportedUserActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.admin.AdminActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.menu.PrivacyActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.group.AddGroupActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.group.GroupMembersActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.menu.EditNumberActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.menu.EditEmailActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.menu.EditPasswordActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.menu.VerificationActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.menu.SavedActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.menu.MenuActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.who.FollowersActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.who.FollowingActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.notifications.NotificationScreen" />
+        <activity android:name="com.doubleclick.MyFacebook.who.ReelLikedActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.who.ViewedActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.story.ChatStoryViewActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.story.HighViewActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.search.LocationActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.who.LikedActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.story.StoryViewActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.story.AddStoryActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.podcast.StartPodcastActivity" />
         <activity
-            android:name=".podcast.PodcastActivity"
+            android:name="com.doubleclick.MyFacebook.podcast.PodcastActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".live.LiveActivity"
+            android:name="com.doubleclick.MyFacebook.live.LiveActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".live.StartLiveActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.live.StartLiveActivity" />
         <activity
-            android:name=".reel.ViewReelActivity"
+            android:name="com.doubleclick.MyFacebook.reel.ViewReelActivity"
             android:theme="@style/ReelTheme" />
-        <activity android:name=".reel.ReelCommentActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.reel.ReelCommentActivity" />
         <activity
-            android:name=".reel.ReelActivity"
+            android:name="com.doubleclick.MyFacebook.reel.ReelActivity"
             android:theme="@style/ReelTheme" />
-        <activity android:name=".send.ImageEditingActivity" />
-        <activity android:name=".send.VideoEditingActivity" />
-        <activity android:name=".reel.PostReelActivity" />
-        <activity android:name=".reel.VideoEditActivity" />
-        <activity android:name=".send.SendToGroupActivity" />
-        <activity android:name=".send.SendToUserActivity" />
-        <activity android:name=".send.SendMediaActivity" />
-        <activity android:name=".send.MediaSelectActivity" />
-        <activity android:name=".faceFilters.FaceFilters" />
-        <activity android:name=".marketPlace.ProductDetailsActivity" />
-        <activity android:name=".marketPlace.MarketPlaceActivity" />
-        <activity android:name=".marketPlace.PostProductActivity" />
-        <activity android:name=".watchParty.StartYouTubeActivity" />
-        <activity android:name=".watchParty.StartPartyActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.send.ImageEditingActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.send.VideoEditingActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.reel.PostReelActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.reel.VideoEditActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.send.SendToGroupActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.send.SendToUserActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.send.SendMediaActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.send.MediaSelectActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.faceFilters.FaceFilters" />
+        <activity android:name="com.doubleclick.MyFacebook.marketPlace.ProductDetailsActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.marketPlace.MarketPlaceActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.marketPlace.PostProductActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.watchParty.StartYouTubeActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.watchParty.StartPartyActivity" />
         <activity
-            android:name=".watchParty.YouTubePartyActivity"
+            android:name="com.doubleclick.MyFacebook.watchParty.YouTubePartyActivity"
             android:theme="@style/Party" />
-        <activity android:name=".watchParty.InviteMoreActivity" />
-        <activity android:name=".watchParty.ChangeWatchPartyActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.watchParty.InviteMoreActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.watchParty.ChangeWatchPartyActivity" />
         <activity
-            android:name=".watchParty.WatchPartyActivity"
+            android:name="com.doubleclick.MyFacebook.watchParty.WatchPartyActivity"
             android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"
             android:theme="@style/Party" />
-        <activity android:name=".watchParty.PartyPostActivity" />
-        <activity android:name=".watchParty.PartyPrivacyActivity" />
-        <activity android:name=".watchParty.InviteActivity" />
-        <activity android:name=".watchParty.StartWatchPartyActivity" />
-        <activity android:name=".meeting.MeetingActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.watchParty.PartyPostActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.watchParty.PartyPrivacyActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.watchParty.InviteActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.watchParty.StartWatchPartyActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.meeting.MeetingActivity" />
         <activity
-            android:name=".groupVideoCall.openvcall.ui.VideoGroupCallActivity"
+            android:name="com.doubleclick.MyFacebook.groupVideoCall.openvcall.ui.VideoGroupCallActivity"
             android:theme="@style/FullScreenVideoTheme" />
         <activity
-            android:name=".groupVideoCall.CallingGroupVideoActivity"
+            android:name="com.doubleclick.MyFacebook.groupVideoCall.CallingGroupVideoActivity"
             android:theme="@style/SplashScreen" />
         <activity
-            android:name=".groupVideoCall.RingingGroupVideoActivity"
+            android:name="com.doubleclick.MyFacebook.groupVideoCall.RingingGroupVideoActivity"
             android:theme="@style/SplashScreen" />
         <activity
-            android:name=".groupVoiceCall.RingingGroupVoiceActivity"
+            android:name="com.doubleclick.MyFacebook.groupVoiceCall.RingingGroupVoiceActivity"
             android:theme="@style/SplashScreen" />
         <activity
-            android:name=".groupVoiceCall.CallingGroupVoiceActivity"
+            android:name="com.doubleclick.MyFacebook.groupVoiceCall.CallingGroupVoiceActivity"
             android:theme="@style/SplashScreen" />
         <activity
-            android:name=".groupVoiceCall.openacall.ui.VoiceCallGroupActivity"
+            android:name="com.doubleclick.MyFacebook.groupVoiceCall.openacall.ui.VoiceCallGroupActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/SplashScreen" />
-        <activity android:name=".group.GroupChatActivity" />
-        <activity android:name=".group.CommentGroupActivity" />
-        <activity android:name=".group.CreateGroupPostActivity" />
-        <activity android:name=".group.EditGroupActivity" />
-        <activity android:name=".group.GroupFragment" />
-        <activity android:name=".group.GroupProfileActivity" />
-        <activity android:name=".group.AddMemberActivity" />
-        <activity android:name=".group.StepThreeActivity" />
-        <activity android:name=".group.StepTwoActivity" />
-        <activity android:name=".group.StepOneActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.group.GroupChatActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.group.CommentGroupActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.group.CreateGroupPostActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.group.EditGroupActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.group.GroupFragment" />
+        <activity android:name="com.doubleclick.MyFacebook.group.GroupProfileActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.group.AddMemberActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.group.StepThreeActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.group.StepTwoActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.group.StepOneActivity" />
         <activity
-            android:name=".calling.VoiceChatViewActivity"
+            android:name="com.doubleclick.MyFacebook.calling.VoiceChatViewActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/SplashScreen" />
         <activity
-            android:name=".calling.VideoChatViewActivity"
+            android:name="com.doubleclick.MyFacebook.calling.VideoChatViewActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/FullScreenVideoTheme" />
         <activity
-            android:name=".calling.RingingActivity"
+            android:name="com.doubleclick.MyFacebook.calling.RingingActivity"
             android:theme="@style/SplashScreen" />
         <activity
-            android:name=".calling.CallingActivity"
+            android:name="com.doubleclick.MyFacebook.calling.CallingActivity"
             android:theme="@style/SplashScreen" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDzUVj9vzFA9sw-a7rsyW0JpomzUTn5xzw" />
+            android:value="AIzaSyBy9FjRuzcGSCjjsg5Q1u4sMQOTFMXxcCU" />
 
-        <activity android:name=".chat.ChatActivity" />
-        <activity android:name=".chat.CreateChatActivity" />
-        <activity android:name=".MediaViewActivity" />
-        <activity android:name=".post.CommentActivity" />
-        <activity android:name=".search.SearchActivity" />
-        <activity android:name=".search.TrendingActivity" />
-        <activity android:name=".post.CreatePostActivity" />
-        <activity android:name=".profile.UserProfileActivity" />
-        <activity android:name=".profile.EditProfileActivity" />
-        <activity android:name=".emailAuth.ForgotPasswordActivity" />
-        <activity android:name=".Check" />
-        <activity android:name=".phoneAuth.RegisterActivity" />
-        <activity android:name=".phoneAuth.VerifyOTPActivity" />
-        <activity android:name=".phoneAuth.GenerateOTPActivity" />
-        <activity android:name=".emailAuth.SignUpActivity" />
-        <activity android:name=".emailAuth.LoginActivity" />
-        <activity android:name=".welcome.IntroLast" />
-        <activity android:name=".welcome.IntroActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.chat.ChatActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.chat.CreateChatActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.MediaViewActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.post.CommentActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.search.SearchActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.search.TrendingActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.post.CreatePostActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.profile.UserProfileActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.profile.EditProfileActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.emailAuth.ForgotPasswordActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.Check" />
+        <activity android:name="com.doubleclick.MyFacebook.phoneAuth.RegisterActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.phoneAuth.VerifyOTPActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.phoneAuth.GenerateOTPActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.emailAuth.SignUpActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.emailAuth.LoginActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.welcome.IntroLast" />
+        <activity android:name="com.doubleclick.MyFacebook.welcome.IntroActivity" />
         <activity
-            android:name=".welcome.SplashScreenActivity"
+            android:name="com.doubleclick.MyFacebook.welcome.SplashScreenActivity"
             android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -179,14 +179,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.doubleclick.MyFacebook.MainActivity" />
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-8957916229862289~8996479428" />
 
         <service
-            android:name=".notifications.FirebaseMessaging"
+            android:name="com.doubleclick.MyFacebook.notifications.FirebaseMessaging"
             android:enabled="true"
             android:exported="true"
             tools:ignore="ExportedService">
